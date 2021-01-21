@@ -11,13 +11,30 @@ echo json_encode($usuarios);
 
 */
 
-$root = new Usuario();
+//$root = new Usuario();
+//Carrega apenas um usuario;
+//$root->loadById(7);
+//echo $root;
 
-$root->loadById(7);
+//Carrega uma lista ordenada por login
 
-echo $root;
+//$lista = Usuario::getList();
+
+//echo json_encode($lista);
+
+//Carrega uma lista de usuarios buscando login
+
+//$busca = Usuario::search("Ang");
+
+//echo json_encode($busca);
 
 
+//Carrega usuario usando logine senha 
+
+$usuario = new Usuario();
+$usuario->login("Juliana12","5783");
+
+echo $usuario;
 
 
 ?>
