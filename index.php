@@ -36,10 +36,23 @@ echo json_encode($usuarios);
 
 //echo $usuario;
 
+/*
+
+CRIANDO UM NOVO USUARIO;
+
 $aluno = new Usuario("Lucas","65465654");
 
 
 $aluno->insert();
 
-echo $aluno;
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(10);
+
+$usuario->update("Juliano","6546");
+
+echo $usuario;
+
 ?>
